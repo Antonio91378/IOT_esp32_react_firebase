@@ -7,8 +7,7 @@
 #define WIFI_PASSWORD "nilha123"             //substitua "Senha_do_seu_wifi" pela senha da sua rede wifi 
 #define FIREBASE_HOST "https://esp32-d2fc6-default-rtdb.firebaseio.com/"    //substitua "Link_do_seu_banco_de_dados" pelo link do seu banco de dados 
 #define FIREBASE_AUTH "Lg1CtfoB9nsl3cSXkh3o1KtiRp0yWyRlxRmf8qUr"   //substitua "Senha_do_seu_banco_de_dados" pela senha do seu banco de dados
-#define USER_EMAIL "antoniovictor200@gmail.com"
-#define USER_PASSWORD "Frankbob123456!"
+
 
 //pinos
 #define LED 13
