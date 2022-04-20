@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { ref, set } from 'firebase/database'
+import { database } from './services/firebase'
 function App() {
+  const ref1 = ref(database, 'LED1')
+
+  const changeToHigh = () => {
+    set(ref1, {
+      value: 1,
+    })
+  }
+  const changeToLow = () => {
+    set(ref1, {
+      value: 0,
+    })
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button
+        onClick={() => {
+          changeToHigh()
+        }}
+      >
+        Ligar o LED
+      </button>
+      <button
+        onClick={() => {
+          changeToLow()
+        }}
+      >
+        Desligar o LED
+      </button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
