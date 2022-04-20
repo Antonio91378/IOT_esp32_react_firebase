@@ -16,20 +16,38 @@ function App() {
 
   return (
     <div className="App">
-      <button
-        onClick={() => {
-          changeToHigh()
-        }}
-      >
-        Ligar o LED
-      </button>
-      <button
-        onClick={() => {
-          changeToLow()
-        }}
-      >
-        Desligar o LED
-      </button>
+      <div className="container">
+        <div className="hero-intro">
+          <h1>IOT usando esp32</h1>
+        </div>
+        <div className="box">
+          <div className="info">
+            <button>informações e pinagem</button>
+          </div>
+          <div id="estado-led">
+            <h2>estado do led:</h2>
+            <h2>ligado</h2>
+          </div>
+          <div className="btns">
+            <button
+              className="btn"
+              onClick={() => {
+                changeToHigh()
+              }}
+            >
+              Ligar o LED
+            </button>
+            <button
+              className="btn"
+              onClick={() => {
+                changeToLow()
+              }}
+            >
+              Desligar o LED
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

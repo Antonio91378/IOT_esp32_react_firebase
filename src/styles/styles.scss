@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btn {
+  font-size: 1.1rem;
+  width: 49%;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108, 108, 108);
+  .container {
+    height: 90vh;
+    width: 50vw;
+    background-color: rgb(83, 83, 83);
+    // border: 1px solid red;
+    box-shadow: 0 0 1rem;
+    border-radius: 2vh;
+    .hero-intro {
+      border-radius: 2vh 2vh 0 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: rgb(62, 62, 62);
+      color: aliceblue;
+      margin-bottom: 2vh;
+    }
+    .box {
+      padding: 0.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: 2px dotted rgb(185, 185, 185);
+      width: 50%;
+      height: 15vh;
+      .info button {
+        background-color: rgb(206, 206, 206);
+        width: 100%;
+        height: 1.4rem;
+
+        text-align: center;
+        font-size: 1.05rem;
+      }
+      #estado-led {
+        display: flex;
+        justify-content: space-between;
+        & :first-child {
+          color: rgb(207, 207, 207);
+          width: 49%;
+        }
+        & h2:nth-child(2) {
+          background-color: rgb(152, 234, 152);
+          width: 49%;
+          text-align: center;
+        }
+      }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
