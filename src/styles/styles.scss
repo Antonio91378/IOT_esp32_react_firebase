@@ -46,6 +46,7 @@
         font-size: 1.05rem;
       }
       #estado-led {
+        flex-direction: row;
         display: flex;
         justify-content: space-between;
         & :first-child {
