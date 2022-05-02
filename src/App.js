@@ -33,7 +33,51 @@ function App() {
               informações e pinagem
             </button>
           </div>
-          {info && <div className="info-n-pin">informações</div>}
+          {info && (
+            <div className="info-n-pin">
+              <div className="info-container">
+                <div className="close-button">
+                  <button
+                    onClick={() => {
+                      setInfo(false)
+                    }}
+                  >
+                    X
+                  </button>
+                </div>
+                <div className="descricao">
+                  <p>descrição</p>
+                  <p>
+                    Sistema que possibilida a mudança de estado de um LED
+                    remotamente.
+                  </p>
+                </div>
+                <div className="pinagem">
+                  <p>elementos utilizados</p>
+                  <p>º LED qualquer</p>
+                  <p>º Resistor de 100 ohm</p>
+                  <p>º Jumpers</p>
+                </div>
+                <div className="procedimento-montagem">
+                  <p>procedimento e montagem</p>
+                  <p>
+                    1-Ligue um jumper à porta 13 do esp32 e o conecte ao anodo
+                    do led;
+                  </p>
+                  <p>2-Lige o catodo do led ao resistor indicado;</p>
+                  <p>3-ligue a outra ponta do resistor ao GND do esp;</p>
+                  <p>
+                    4-Carregue o sketch.ino para o esp32 indicado no{' '}
+                    <a href="https://github.com/Antonio91378/IOT_esp32_react_firebase/blob/main/Esp32_firebase/Esp32_firebase.ino">
+                      link
+                    </a>{' '}
+                    e certifique-se de alterar os parâmetros de rede para o seu
+                    wifi;
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
           <div id="estado-led">
             {estado && (
               <div>

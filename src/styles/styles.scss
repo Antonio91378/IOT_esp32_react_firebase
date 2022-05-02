@@ -83,12 +83,60 @@
         width: 100%;
       }
       .info-n-pin {
-        background-color: rgba(0, 0, 0, 0.182);
+        background-color: rgba(0, 0, 0, 0.678);
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info-container {
+          position: relative;
+          width: 20vw;
+          padding: 1.2vh;
+          height: 60vh;
+          background-color: rgb(55, 55, 55);
+          .close-button {
+            position: absolute;
+            left: 44%;
+            top: -10%;
+            button {
+              width: 5vh;
+              height: 5vh;
+              border-radius: 50%;
+            }
+          }
+          .descricao {
+            background-color: rgb(156, 156, 156);
+            margin-bottom: 2vh;
+            // rgb(93, 93, 93);
+            & > :first-child {
+              background-color: rgb(93, 93, 93);
+            }
+          }
+          .pinagem {
+            background-color: rgb(156, 156, 156);
+            margin-bottom: 2vh;
+            & > :first-child {
+              background-color: rgb(93, 93, 93);
+            }
+          }
+          .procedimento-montagem {
+            background-color: rgb(156, 156, 156);
+            & > :first-child {
+              padding-bottom: 0 !important;
+            }
+            p {
+              padding-bottom: 1rem;
+            }
+            & > :first-child {
+              background-color: rgb(93, 93, 93);
+            }
+          }
+        }
       }
     }
   }
