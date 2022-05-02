@@ -27,12 +27,20 @@ function App() {
             <button>informações e pinagem</button>
           </div>
           <div id="estado-led">
-            <h2>estado do led:</h2>
-            {estado && <h2>ligado</h2>}
+            {estado && (
+              <div>
+                <h2>estado do led:</h2>
+                <h2>ligado</h2>
+              </div>
+            )}
           </div>
           <div id="Nestado-led">
-            <h2>estado do led:</h2>
-            {!estado && <h2>desligado</h2>}
+            {!estado && (
+              <div>
+                <h2>estado do led:</h2>
+                <h2>desligado</h2>
+              </div>
+            )}
           </div>
           <div className="btns">
             <button
