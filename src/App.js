@@ -2,7 +2,7 @@ import { ref, set } from 'firebase/database'
 import { useState } from 'react'
 import { database } from './services/firebase'
 function App() {
-  useState(estado, setEstado)[false]
+  const [estado, setEstado] = useState(false)
   const ref1 = ref(database, 'LED1')
 
   const changeToHigh = () => {
