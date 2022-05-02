@@ -58,6 +58,19 @@
           text-align: center;
         }
       }
+      #Nestado-led {
+        display: flex;
+        justify-content: space-between;
+        & :first-child {
+          color: rgb(207, 207, 207);
+          width: 49%;
+        }
+        & h2:nth-child(2) {
+          background-color: rgb(224, 86, 86);
+          width: 49%;
+          text-align: center;
+        }
+      }
       .btns {
         display: flex;
         justify-content: space-between;

@@ -1,6 +1,8 @@
 import { ref, set } from 'firebase/database'
+import { useState } from 'react'
 import { database } from './services/firebase'
 function App() {
+  useState(estado, setEstado)[false]
   const ref1 = ref(database, 'LED1')
 
   const changeToHigh = () => {
@@ -26,13 +28,18 @@ function App() {
           </div>
           <div id="estado-led">
             <h2>estado do led:</h2>
-            <h2>ligado</h2>
+            {estado && <h2>ligado</h2>}
+          </div>
+          <div id="Nestado-led">
+            <h2>estado do led:</h2>
+            {!estado && <h2>desligado</h2>}
           </div>
           <div className="btns">
             <button
               className="btn"
               onClick={() => {
                 changeToHigh()
+                setEstado(true)
               }}
             >
               Ligar o LED
@@ -41,6 +48,7 @@ function App() {
               className="btn"
               onClick={() => {
                 changeToLow()
+                setEstado(false)
               }}
             >
               Desligar o LED
