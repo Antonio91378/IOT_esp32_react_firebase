@@ -46,6 +46,8 @@
         font-size: 1.05rem;
       }
       #estado-led div {
+        padding-top: 0.6vh;
+        padding-bottom: 0.6vh;
         flex-direction: row;
         display: flex;
         justify-content: space-between;
@@ -60,6 +62,8 @@
         }
       }
       #Nestado-led div {
+        padding-top: 0.6vh;
+        padding-bottom: 0.6vh;
         flex-direction: row;
         display: flex;
         justify-content: space-between;
@@ -77,6 +81,14 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+      }
+      .info-n-pin {
+        background-color: rgba(0, 0, 0, 0.182);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
       }
     }
   }

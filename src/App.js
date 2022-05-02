@@ -33,7 +33,7 @@ function App() {
               informações e pinagem
             </button>
           </div>
-          {info && <div>informações</div>}
+          {info && <div className="info-n-pin">informações</div>}
           <div id="estado-led">
             {estado && (
               <div>
