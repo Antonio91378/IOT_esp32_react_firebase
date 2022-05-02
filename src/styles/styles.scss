@@ -30,13 +30,13 @@
       margin-bottom: 2vh;
     }
     .box {
-      padding: 0.3vh;
+      padding: 0.6vh;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       border: 2px dotted rgb(185, 185, 185);
       width: 50%;
-      height: 15vh;
+      // height: 15vh;
       .info button {
         background-color: rgb(206, 206, 206);
         width: 100%;

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { database } from './services/firebase'
 function App() {
   const [estado, setEstado] = useState('')
+  const [info, setInfo] = useState(false)
   const ref1 = ref(database, 'LED1')
 
   const changeToHigh = () => {
@@ -24,8 +25,15 @@ function App() {
         </div>
         <div className="box">
           <div className="info">
-            <button>informações e pinagem</button>
+            <button
+              onClick={() => {
+                setInfo(true)
+              }}
+            >
+              informações e pinagem
+            </button>
           </div>
+          {info && <div>informações</div>}
           <div id="estado-led">
             {estado && (
               <div>
