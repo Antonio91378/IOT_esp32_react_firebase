@@ -59,7 +59,8 @@
           text-align: center;
         }
       }
-      #Nestado-led {
+      #Nestado-led div {
+        flex-direction: row;
         display: flex;
         justify-content: space-between;
         & :first-child {
