@@ -20,6 +20,11 @@
     // border: 1px solid red;
     box-shadow: 0 0 1rem;
     border-radius: 2vh;
+    .container2 {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
     .hero-intro {
       border-radius: 2vh 2vh 0 0;
       display: flex;
@@ -37,6 +42,29 @@
       border: 2px dotted rgb(185, 185, 185);
       width: 50%;
       // height: 15vh;
+      .slider-slot {
+        border: 0.1vh dotted grey;
+        margin: 0.4vh;
+        margin-top: 0.8vh;
+        margin-bottom: 0.8vh;
+        p {
+          color: rgb(230, 227, 227);
+          margin: 0.4vh;
+          font-size: 1.1rem;
+        }
+        & input {
+          width: 100%;
+          height: 1.5rem;
+        }
+      }
+      .hide-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+          color: rgb(215, 214, 214);
+        }
+      }
       .info button {
         background-color: rgb(206, 206, 206);
         width: 100%;
@@ -81,6 +109,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 0.3rem;
       }
       .info-n-pin {
         background-color: rgba(0, 0, 0, 0.678);
@@ -94,15 +123,18 @@
         align-items: center;
 
         .info-container {
-          position: relative;
+          overflow-y: scroll;
+          // position: relative;
           width: 20vw;
           padding: 1.2vh;
           height: 60vh;
           background-color: rgb(55, 55, 55);
+          z-index: 2;
           .close-button {
             position: absolute;
-            left: 44%;
-            top: -10%;
+            right: 49.3%;
+            top: 14%;
+            z-index: 3;
             button {
               width: 5vh;
               height: 5vh;
@@ -137,6 +169,14 @@
             }
           }
         }
+      }
+      .btn-show {
+        padding: 0.5rem;
+        width: 49%;
+        background-color: rgb(230, 92, 42);
+        border: 1px solid gray;
+        font-size: 1rem;
+        color: rgb(21, 21, 21);
       }
     }
   }
