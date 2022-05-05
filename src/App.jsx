@@ -81,7 +81,7 @@ function App() {
                 </p>
                 <p>
                   5-Carregue o sketch.ino para o esp32 indicado no{' '}
-                  <a href="https://github.com/Antonio91378/IOT_esp32_react_firebase/blob/main/Esp32_firebase/Esp32_firebase.ino">
+                  <a href="https://github.com/Antonio91378/IOT_esp32_react_firebase/blob/main/Esp32_Sistema2/Esp32_redeCasa/Esp32_redeCasa.ino">
                     link
                   </a>{' '}
                   e certifique-se de alterar os parâmetros de rede para o seu
