@@ -70,17 +70,16 @@ function App() {
             procedimento={
               <div>
                 <p>1-Ligue os terminais da bateria e o esp à protoboard;</p>
-                <p>2-</p>
                 <p>
-                  3-alimente os servos com as baterias, garanta o GND entre o
+                  2-alimente os servos com as baterias, garanta o GND entre o
                   esp e as baterias
                 </p>
                 <p>
-                  4-Ligue os sinais PWM de até 3 servos nos canais D18,D19 e D21
+                  3-Ligue os sinais PWM de até 3 servos nos canais D18,D19 e D21
                   do esp
                 </p>
                 <p>
-                  5-Carregue o sketch.ino para o esp32 indicado no{' '}
+                  4-Carregue o sketch.ino para o esp32 indicado no{' '}
                   <a href="https://github.com/Antonio91378/IOT_esp32_react_firebase/blob/main/Esp32_firebase/Esp32_firebase.ino">
                     link
                   </a>{' '}

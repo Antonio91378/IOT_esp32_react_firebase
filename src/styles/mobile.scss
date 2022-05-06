@@ -1,0 +1,75 @@
+@media (max-width: 600px) {
+  .container {
+    height: 95vh !important;
+    width: 90vw !important;
+    .container2 {
+      flex-direction: column;
+
+      gap: 0.5rem;
+      padding: 0.5rem;
+      .info-container {
+        width: 80% !important;
+        height: 65% !important;
+        font-size: 1.5rem;
+      }
+      .close-button {
+        right: 43.3% !important;
+        top: 10% !important;
+
+        button {
+          width: 7vh !important;
+          height: 7vh !important;
+          background-color: #e74c3c;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+      .box {
+        width: 100% !important;
+        min-height: 11vh !important;
+        font-size: 1.3rem;
+        .info button {
+          height: 3rem !important;
+          font-size: 1.3rem !important;
+        }
+        #estado-led,
+        #Nestado-led {
+          font-size: 1rem !important;
+        }
+        .btns {
+          height: 3.5rem;
+        }
+        .btn-show {
+          height: 3.5rem;
+        }
+        .slider-slot {
+          p {
+            font-size: 1.5rem !important;
+            font-weight: bold;
+          }
+          #slider {
+            -webkit-appearance: none;
+            background-color: #bdc3c7;
+            width: 300px;
+            height: 5px;
+            border-radius: 5px;
+            margin: 0 auto;
+            outline: 0;
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+            &::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              background-color: #e74c3c;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              border: 2px solid white;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
