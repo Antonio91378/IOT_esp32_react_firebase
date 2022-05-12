@@ -16,6 +16,7 @@
   align-items: center;
   background-color: rgb(108, 108, 108);
   .container {
+    overflow-y: scroll;
     height: 90vh;
     width: 50vw;
     background-color: rgb(83, 83, 83);
@@ -24,6 +25,9 @@
     border-radius: 2vh;
     .container2 {
       display: flex;
+      // flex: 2;
+      flex-wrap: wrap;
+      flex-direction: row;
       gap: 0.5rem;
       padding: 0.5rem;
     }
@@ -42,7 +46,7 @@
       flex-direction: column;
       justify-content: space-around;
       border: 2px dotted rgb(185, 185, 185);
-      width: 50%;
+      width: 49.3%;
       // height: 15vh;
       .slider-slot {
         border: 0.1vh dotted grey;

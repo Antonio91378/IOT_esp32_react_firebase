@@ -3,7 +3,7 @@ import BtnsLed from './components/btnsLed'
 import Container from './components/container'
 import Content2 from './components/content2'
 import Info from './components/info'
-import SliderServo from './components/sliderServo'
+import Slider from './components/Slider'
 function App() {
   return (
     <div className="App">
@@ -44,7 +44,7 @@ function App() {
                   </p>
                 </div>
               }
-            ></Info>
+            />
             <BtnsLed />
           </Content2>
         </Box>
@@ -88,8 +88,51 @@ function App() {
                 </p>
               </div>
             }
-          ></Info>
-          <SliderServo />
+          />
+          <Slider
+            valorMinimo="0"
+            valorMaximo="180"
+            reference="Angulo/value"
+            originReference="Angulo"
+            name="Ângulo"
+            type="º"
+          />
+        </Box>
+        <Box id="3">
+          <Info
+            descricao={
+              <p>
+                Sistema que possibilida mudar a velocidade de um motor brushless
+                trifásico.
+              </p>
+            }
+            elementos={
+              <div>
+                <p>º Um esp32;</p>
+                <p>º Motor brushless A2212/10T (muito usado em aeromodelos);</p>
+                <p>
+                  º Uma bateria 11.1V, (usei a PowerBolt 2200mAh 3S 30C) para
+                  cada servo que for usar;
+                </p>
+                <p>º Uma protoboard;</p>
+                <p>º Um esc 30A.</p>
+              </div>
+            }
+            procedimento={
+              <div>
+                <p>1-Ligue os terminais da bateria e o esp à protoboard;</p>
+                
+              </div>
+            }
+          />
+          <Slider
+            valorMinimo="0"
+            valorMaximo="100"
+            reference="Velocidade/value"
+            originReference="Velocidade"
+            name="Velocidade"
+            type="%"
+          />
         </Box>
       </Container>
     </div>

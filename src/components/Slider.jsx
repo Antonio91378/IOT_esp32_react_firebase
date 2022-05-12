@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { ref, set, onValue } from 'firebase/database'
 import { database } from '../services/firebase'
-const SliderServo = () => {
-  const ref1 = ref(database, 'Angulo')
+const Slider = ({
+  valorMinimo,
+  valorMaximo,
+  reference,
+  originReference,
+  name,
+  type,
+}) => {
+  const ref1 = ref(database, `${originReference}`)
   const [angulo, setAngulo] = useState()
   useEffect(() => {
-    const ref1 = ref(database, 'Angulo/value')
+    const ref1 = ref(database, `${reference}`)
     onValue(ref1, (snapshot) => {
       const data = snapshot.val()
       setAngulo(data)
@@ -25,12 +32,13 @@ const SliderServo = () => {
     <div>
       <div className="slider-slot">
         <p>
-          Ângulo = <span>{angulo}</span>º
+          {name} = <span>{angulo}</span>
+          {type}
         </p>
         <input
           type="range"
-          min="0"
-          max="180"
+          min={valorMinimo}
+          max={valorMaximo}
           id="slider"
           value={angulo}
           steps="1"
@@ -42,4 +50,4 @@ const SliderServo = () => {
   )
 }
 
-export default SliderServo
+export default Slider
